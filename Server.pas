@@ -27,7 +27,9 @@ begin
   s_str[i] := client[i].GetStream;
   length := s_str[i].Read(s_raw, 0, s_raw.Length);
   name := System.Text.Encoding.Default.GetString(s_raw, 0, length);
+  textcolor(3);
   writeln('Has client ', name, '.');
+  textcolor(2);
   msg := Concat('Welcome to the server ', s_ip, ', ', name, '!');
   s_str[i].Write(System.Text.Encoding.Default.GetBytes(msg), 0, msg.Length);
   repeat
@@ -54,19 +56,20 @@ begin
   System.Console.Title := 'MicChat Revived Edition Server';
   s_raw := TByteArray(System.Array.CreateInstance(typeof(byte), 1024));
   textcolor(2);
-  write('MicChat Revived Edition');
+  write('MicChat Revived Edition [Server]');
   writeln;
-  write('Version 1.1');
-  writeln;
-  write('Server');
+  write('Version 1.2');
   repeat
     begin
       try
-        textcolor(2);
+        textcolor(3);
         writeln;
         write('Enter IP: ');
+        textcolor(7);
         readln(s_ip);
+        textcolor(3);
         write('Enter port: ');
+        textcolor(7);
         readln(s_port);
         listener := TCPListener.Create(IPAddress.Parse(s_ip), s_port);
         listener.Start(64);

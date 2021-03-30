@@ -2,7 +2,7 @@
 
 interface
 
-uses System, System.Drawing, System.Windows.Forms;
+uses System, System.Drawing, System.Windows.Forms, Contributors;
 
 type
   AboutMicChatRevivedEdition = class(Form)
@@ -28,7 +28,7 @@ implementation
 
 procedure AboutMicChatRevivedEdition.linkLabel1_LinkClicked(sender: Object; e: LinkLabelLinkClickedEventArgs);
 begin
-  exec('https://www.youtube.com/channel/UCxFymvUt5FeMevOUEOfmcLA');
+  Form(new ContribForm).show;
 end;
 
 end.

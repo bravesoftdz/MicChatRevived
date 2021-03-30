@@ -3,10 +3,15 @@ procedure InitializeComponent;
         self.components := new System.ComponentModel.Container();
         var resources: System.ComponentModel.ComponentResourceManager := new System.ComponentModel.ComponentResourceManager(typeof(Form1));
         self.menuStrip1 := new System.Windows.Forms.MenuStrip();
-        self.panel1 := new System.Windows.Forms.Panel();
-        self.panel2 := new System.Windows.Forms.Panel();
         self.micChatToolStripMenuItem := new System.Windows.Forms.ToolStripMenuItem();
+        self.openTheClientToolStripMenuItem := new System.Windows.Forms.ToolStripMenuItem();
+        self.hostAServerToolStripMenuItem := new System.Windows.Forms.ToolStripMenuItem();
+        self.toolStripSeparator1 := new System.Windows.Forms.ToolStripSeparator();
+        self.settingsToolStripMenuItem := new System.Windows.Forms.ToolStripMenuItem();
+        self.toolStripSeparator2 := new System.Windows.Forms.ToolStripSeparator();
+        self.showSystemInfoToolStripMenuItem := new System.Windows.Forms.ToolStripMenuItem();
         self.aboutToolStripMenuItem := new System.Windows.Forms.ToolStripMenuItem();
+        self.panel1 := new System.Windows.Forms.Panel();
         self.groupBox1 := new System.Windows.Forms.GroupBox();
         self.linkLabel3 := new System.Windows.Forms.LinkLabel();
         self.pictureBox3 := new System.Windows.Forms.PictureBox();
@@ -14,49 +19,44 @@ procedure InitializeComponent;
         self.pictureBox2 := new System.Windows.Forms.PictureBox();
         self.linkLabel2 := new System.Windows.Forms.LinkLabel();
         self.pictureBox1 := new System.Windows.Forms.PictureBox();
-        self.openTheClientToolStripMenuItem := new System.Windows.Forms.ToolStripMenuItem();
-        self.hostAServerToolStripMenuItem := new System.Windows.Forms.ToolStripMenuItem();
-        self.toolStripSeparator1 := new System.Windows.Forms.ToolStripSeparator();
-        self.settingsToolStripMenuItem := new System.Windows.Forms.ToolStripMenuItem();
-        self.toolStripSeparator2 := new System.Windows.Forms.ToolStripSeparator();
-        self.showSystemInfoToolStripMenuItem := new System.Windows.Forms.ToolStripMenuItem();
-        self.groupBox2 := new System.Windows.Forms.GroupBox();
-        self.button1 := new System.Windows.Forms.Button();
-        self.radioButton1 := new System.Windows.Forms.RadioButton();
-        self.pictureBox4 := new System.Windows.Forms.PictureBox();
-        self.radioButton2 := new System.Windows.Forms.RadioButton();
-        self.pictureBox5 := new System.Windows.Forms.PictureBox();
+        self.panel2 := new System.Windows.Forms.Panel();
+        self.label1 := new System.Windows.Forms.Label();
         self.groupBox3 := new System.Windows.Forms.GroupBox();
         self.radioButton3 := new System.Windows.Forms.RadioButton();
         self.pictureBox6 := new System.Windows.Forms.PictureBox();
         self.button2 := new System.Windows.Forms.Button();
         self.radioButton4 := new System.Windows.Forms.RadioButton();
         self.pictureBox7 := new System.Windows.Forms.PictureBox();
-        self.label1 := new System.Windows.Forms.Label();
+        self.groupBox2 := new System.Windows.Forms.GroupBox();
+        self.radioButton2 := new System.Windows.Forms.RadioButton();
+        self.pictureBox5 := new System.Windows.Forms.PictureBox();
+        self.button1 := new System.Windows.Forms.Button();
+        self.radioButton1 := new System.Windows.Forms.RadioButton();
+        self.pictureBox4 := new System.Windows.Forms.PictureBox();
         self.notifyIcon1 := new System.Windows.Forms.NotifyIcon(self.components);
         self.contextMenuStrip1 := new System.Windows.Forms.ContextMenuStrip(self.components);
         self.openTheClientToolStripMenuItem1 := new System.Windows.Forms.ToolStripMenuItem();
         self.hostAServerToolStripMenuItem1 := new System.Windows.Forms.ToolStripMenuItem();
         self.toolStripSeparator3 := new System.Windows.Forms.ToolStripSeparator();
+        self.showSystemInfoToolStripMenuItem1 := new System.Windows.Forms.ToolStripMenuItem();
+        self.toolStripSeparator5 := new System.Windows.Forms.ToolStripSeparator();
         self.showMicChatToolStripMenuItem := new System.Windows.Forms.ToolStripMenuItem();
         self.hideMicChatToolStripMenuItem := new System.Windows.Forms.ToolStripMenuItem();
-        self.closeMicChatToolStripMenuItem := new System.Windows.Forms.ToolStripMenuItem();
-        self.toolStripSeparator5 := new System.Windows.Forms.ToolStripSeparator();
         self.toolStripSeparator4 := new System.Windows.Forms.ToolStripSeparator();
-        self.showSystemInfoToolStripMenuItem1 := new System.Windows.Forms.ToolStripMenuItem();
+        self.closeMicChatToolStripMenuItem := new System.Windows.Forms.ToolStripMenuItem();
         self.menuStrip1.SuspendLayout();
         self.panel1.SuspendLayout();
-        self.panel2.SuspendLayout();
         self.groupBox1.SuspendLayout();
         (System.ComponentModel.ISupportInitialize(self.pictureBox3)).BeginInit();
         (System.ComponentModel.ISupportInitialize(self.pictureBox2)).BeginInit();
         (System.ComponentModel.ISupportInitialize(self.pictureBox1)).BeginInit();
-        self.groupBox2.SuspendLayout();
-        (System.ComponentModel.ISupportInitialize(self.pictureBox4)).BeginInit();
-        (System.ComponentModel.ISupportInitialize(self.pictureBox5)).BeginInit();
+        self.panel2.SuspendLayout();
         self.groupBox3.SuspendLayout();
         (System.ComponentModel.ISupportInitialize(self.pictureBox6)).BeginInit();
         (System.ComponentModel.ISupportInitialize(self.pictureBox7)).BeginInit();
+        self.groupBox2.SuspendLayout();
+        (System.ComponentModel.ISupportInitialize(self.pictureBox5)).BeginInit();
+        (System.ComponentModel.ISupportInitialize(self.pictureBox4)).BeginInit();
         self.contextMenuStrip1.SuspendLayout();
         self.SuspendLayout();
         // 
@@ -71,6 +71,66 @@ procedure InitializeComponent;
         self.menuStrip1.TabIndex := 0;
         self.menuStrip1.Text := 'menuStrip1';
         // 
+        // micChatToolStripMenuItem
+        // 
+        self.micChatToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[6](self.openTheClientToolStripMenuItem, self.hostAServerToolStripMenuItem, self.toolStripSeparator1, self.settingsToolStripMenuItem, self.toolStripSeparator2, self.showSystemInfoToolStripMenuItem));
+        self.micChatToolStripMenuItem.ForeColor := System.Drawing.Color.White;
+        self.micChatToolStripMenuItem.Image := (System.Drawing.Image(resources.GetObject('micChatToolStripMenuItem.Image')));
+        self.micChatToolStripMenuItem.Name := 'micChatToolStripMenuItem';
+        self.micChatToolStripMenuItem.Size := new System.Drawing.Size(80, 20);
+        self.micChatToolStripMenuItem.Text := 'MicChat';
+        // 
+        // openTheClientToolStripMenuItem
+        // 
+        self.openTheClientToolStripMenuItem.Image := (System.Drawing.Image(resources.GetObject('openTheClientToolStripMenuItem.Image')));
+        self.openTheClientToolStripMenuItem.Name := 'openTheClientToolStripMenuItem';
+        self.openTheClientToolStripMenuItem.Size := new System.Drawing.Size(167, 22);
+        self.openTheClientToolStripMenuItem.Text := 'Open the client';
+        self.openTheClientToolStripMenuItem.Click += openTheClientToolStripMenuItem_Click;
+        // 
+        // hostAServerToolStripMenuItem
+        // 
+        self.hostAServerToolStripMenuItem.Image := (System.Drawing.Image(resources.GetObject('hostAServerToolStripMenuItem.Image')));
+        self.hostAServerToolStripMenuItem.Name := 'hostAServerToolStripMenuItem';
+        self.hostAServerToolStripMenuItem.Size := new System.Drawing.Size(167, 22);
+        self.hostAServerToolStripMenuItem.Text := 'Host a server';
+        self.hostAServerToolStripMenuItem.Click += hostAServerToolStripMenuItem_Click;
+        // 
+        // toolStripSeparator1
+        // 
+        self.toolStripSeparator1.Name := 'toolStripSeparator1';
+        self.toolStripSeparator1.Size := new System.Drawing.Size(164, 6);
+        // 
+        // settingsToolStripMenuItem
+        // 
+        self.settingsToolStripMenuItem.Image := (System.Drawing.Image(resources.GetObject('settingsToolStripMenuItem.Image')));
+        self.settingsToolStripMenuItem.Name := 'settingsToolStripMenuItem';
+        self.settingsToolStripMenuItem.Size := new System.Drawing.Size(167, 22);
+        self.settingsToolStripMenuItem.Text := 'Settings';
+        self.settingsToolStripMenuItem.Click += settingsToolStripMenuItem_Click;
+        // 
+        // toolStripSeparator2
+        // 
+        self.toolStripSeparator2.Name := 'toolStripSeparator2';
+        self.toolStripSeparator2.Size := new System.Drawing.Size(164, 6);
+        // 
+        // showSystemInfoToolStripMenuItem
+        // 
+        self.showSystemInfoToolStripMenuItem.Image := (System.Drawing.Image(resources.GetObject('showSystemInfoToolStripMenuItem.Image')));
+        self.showSystemInfoToolStripMenuItem.Name := 'showSystemInfoToolStripMenuItem';
+        self.showSystemInfoToolStripMenuItem.Size := new System.Drawing.Size(167, 22);
+        self.showSystemInfoToolStripMenuItem.Text := 'Show system info';
+        self.showSystemInfoToolStripMenuItem.Click += showSystemInfoToolStripMenuItem_Click;
+        // 
+        // aboutToolStripMenuItem
+        // 
+        self.aboutToolStripMenuItem.ForeColor := System.Drawing.Color.White;
+        self.aboutToolStripMenuItem.Image := (System.Drawing.Image(resources.GetObject('aboutToolStripMenuItem.Image')));
+        self.aboutToolStripMenuItem.Name := 'aboutToolStripMenuItem';
+        self.aboutToolStripMenuItem.Size := new System.Drawing.Size(68, 20);
+        self.aboutToolStripMenuItem.Text := 'About';
+        self.aboutToolStripMenuItem.Click += aboutToolStripMenuItem_Click;
+        // 
         // panel1
         // 
         self.panel1.BackgroundImage := (System.Drawing.Image(resources.GetObject('panel1.BackgroundImage')));
@@ -81,36 +141,6 @@ procedure InitializeComponent;
         self.panel1.Name := 'panel1';
         self.panel1.Size := new System.Drawing.Size(130, 267);
         self.panel1.TabIndex := 1;
-        // 
-        // panel2
-        // 
-        self.panel2.AutoScroll := true;
-        self.panel2.Controls.Add(self.label1);
-        self.panel2.Controls.Add(self.groupBox3);
-        self.panel2.Controls.Add(self.groupBox2);
-        self.panel2.Dock := System.Windows.Forms.DockStyle.Fill;
-        self.panel2.Location := new System.Drawing.Point(130, 24);
-        self.panel2.Name := 'panel2';
-        self.panel2.Size := new System.Drawing.Size(269, 267);
-        self.panel2.TabIndex := 2;
-        // 
-        // micChatToolStripMenuItem
-        // 
-        self.micChatToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[6](self.openTheClientToolStripMenuItem, self.hostAServerToolStripMenuItem, self.toolStripSeparator1, self.settingsToolStripMenuItem, self.toolStripSeparator2, self.showSystemInfoToolStripMenuItem));
-        self.micChatToolStripMenuItem.ForeColor := System.Drawing.Color.White;
-        self.micChatToolStripMenuItem.Image := (System.Drawing.Image(resources.GetObject('micChatToolStripMenuItem.Image')));
-        self.micChatToolStripMenuItem.Name := 'micChatToolStripMenuItem';
-        self.micChatToolStripMenuItem.Size := new System.Drawing.Size(80, 20);
-        self.micChatToolStripMenuItem.Text := 'MicChat';
-        // 
-        // aboutToolStripMenuItem
-        // 
-        self.aboutToolStripMenuItem.ForeColor := System.Drawing.Color.White;
-        self.aboutToolStripMenuItem.Image := (System.Drawing.Image(resources.GetObject('aboutToolStripMenuItem.Image')));
-        self.aboutToolStripMenuItem.Name := 'aboutToolStripMenuItem';
-        self.aboutToolStripMenuItem.Size := new System.Drawing.Size(68, 20);
-        self.aboutToolStripMenuItem.Text := 'About';
-        self.aboutToolStripMenuItem.Click += aboutToolStripMenuItem_Click;
         // 
         // groupBox1
         // 
@@ -192,110 +222,28 @@ procedure InitializeComponent;
         self.pictureBox1.TabIndex := 2;
         self.pictureBox1.TabStop := false;
         // 
-        // openTheClientToolStripMenuItem
+        // panel2
         // 
-        self.openTheClientToolStripMenuItem.Image := (System.Drawing.Image(resources.GetObject('openTheClientToolStripMenuItem.Image')));
-        self.openTheClientToolStripMenuItem.Name := 'openTheClientToolStripMenuItem';
-        self.openTheClientToolStripMenuItem.Size := new System.Drawing.Size(167, 22);
-        self.openTheClientToolStripMenuItem.Text := 'Open the client';
-        self.openTheClientToolStripMenuItem.Click += openTheClientToolStripMenuItem_Click;
+        self.panel2.AutoScroll := true;
+        self.panel2.Controls.Add(self.label1);
+        self.panel2.Controls.Add(self.groupBox3);
+        self.panel2.Controls.Add(self.groupBox2);
+        self.panel2.Dock := System.Windows.Forms.DockStyle.Fill;
+        self.panel2.Location := new System.Drawing.Point(130, 24);
+        self.panel2.Name := 'panel2';
+        self.panel2.Size := new System.Drawing.Size(269, 267);
+        self.panel2.TabIndex := 2;
         // 
-        // hostAServerToolStripMenuItem
+        // label1
         // 
-        self.hostAServerToolStripMenuItem.Image := (System.Drawing.Image(resources.GetObject('hostAServerToolStripMenuItem.Image')));
-        self.hostAServerToolStripMenuItem.Name := 'hostAServerToolStripMenuItem';
-        self.hostAServerToolStripMenuItem.Size := new System.Drawing.Size(167, 22);
-        self.hostAServerToolStripMenuItem.Text := 'Host a server';
-        self.hostAServerToolStripMenuItem.Click += hostAServerToolStripMenuItem_Click;
-        // 
-        // toolStripSeparator1
-        // 
-        self.toolStripSeparator1.Name := 'toolStripSeparator1';
-        self.toolStripSeparator1.Size := new System.Drawing.Size(164, 6);
-        // 
-        // settingsToolStripMenuItem
-        // 
-        self.settingsToolStripMenuItem.Image := (System.Drawing.Image(resources.GetObject('settingsToolStripMenuItem.Image')));
-        self.settingsToolStripMenuItem.Name := 'settingsToolStripMenuItem';
-        self.settingsToolStripMenuItem.Size := new System.Drawing.Size(167, 22);
-        self.settingsToolStripMenuItem.Text := 'Settings';
-        self.settingsToolStripMenuItem.Click += settingsToolStripMenuItem_Click;
-        // 
-        // toolStripSeparator2
-        // 
-        self.toolStripSeparator2.Name := 'toolStripSeparator2';
-        self.toolStripSeparator2.Size := new System.Drawing.Size(164, 6);
-        // 
-        // showSystemInfoToolStripMenuItem
-        // 
-        self.showSystemInfoToolStripMenuItem.Image := (System.Drawing.Image(resources.GetObject('showSystemInfoToolStripMenuItem.Image')));
-        self.showSystemInfoToolStripMenuItem.Name := 'showSystemInfoToolStripMenuItem';
-        self.showSystemInfoToolStripMenuItem.Size := new System.Drawing.Size(167, 22);
-        self.showSystemInfoToolStripMenuItem.Text := 'Show system info';
-        self.showSystemInfoToolStripMenuItem.Click += showSystemInfoToolStripMenuItem_Click;
-        // 
-        // groupBox2
-        // 
-        self.groupBox2.Controls.Add(self.radioButton2);
-        self.groupBox2.Controls.Add(self.pictureBox5);
-        self.groupBox2.Controls.Add(self.button1);
-        self.groupBox2.Controls.Add(self.radioButton1);
-        self.groupBox2.Controls.Add(self.pictureBox4);
-        self.groupBox2.Location := new System.Drawing.Point(6, 6);
-        self.groupBox2.Name := 'groupBox2';
-        self.groupBox2.Size := new System.Drawing.Size(239, 140);
-        self.groupBox2.TabIndex := 5;
-        self.groupBox2.TabStop := false;
-        self.groupBox2.Text := 'MicChat';
-        // 
-        // button1
-        // 
-        self.button1.Location := new System.Drawing.Point(158, 111);
-        self.button1.Name := 'button1';
-        self.button1.Size := new System.Drawing.Size(75, 23);
-        self.button1.TabIndex := 3;
-        self.button1.Text := 'Do';
-        self.button1.UseVisualStyleBackColor := true;
-        self.button1.Click += button1_Click;
-        // 
-        // radioButton1
-        // 
-        self.radioButton1.Checked := true;
-        self.radioButton1.Location := new System.Drawing.Point(54, 28);
-        self.radioButton1.Name := 'radioButton1';
-        self.radioButton1.Size := new System.Drawing.Size(179, 24);
-        self.radioButton1.TabIndex := 1;
-        self.radioButton1.Text := 'Open the client';
-        self.radioButton1.UseVisualStyleBackColor := true;
-        // 
-        // pictureBox4
-        // 
-        self.pictureBox4.Image := (System.Drawing.Image(resources.GetObject('pictureBox4.Image')));
-        self.pictureBox4.Location := new System.Drawing.Point(6, 19);
-        self.pictureBox4.Name := 'pictureBox4';
-        self.pictureBox4.Size := new System.Drawing.Size(42, 42);
-        self.pictureBox4.SizeMode := System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-        self.pictureBox4.TabIndex := 2;
-        self.pictureBox4.TabStop := false;
-        // 
-        // radioButton2
-        // 
-        self.radioButton2.Location := new System.Drawing.Point(54, 76);
-        self.radioButton2.Name := 'radioButton2';
-        self.radioButton2.Size := new System.Drawing.Size(179, 24);
-        self.radioButton2.TabIndex := 4;
-        self.radioButton2.Text := 'Host a server';
-        self.radioButton2.UseVisualStyleBackColor := true;
-        // 
-        // pictureBox5
-        // 
-        self.pictureBox5.Image := (System.Drawing.Image(resources.GetObject('pictureBox5.Image')));
-        self.pictureBox5.Location := new System.Drawing.Point(6, 67);
-        self.pictureBox5.Name := 'pictureBox5';
-        self.pictureBox5.Size := new System.Drawing.Size(42, 42);
-        self.pictureBox5.SizeMode := System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-        self.pictureBox5.TabIndex := 5;
-        self.pictureBox5.TabStop := false;
+        self.label1.Dock := System.Windows.Forms.DockStyle.Bottom;
+        self.label1.Font := new System.Drawing.Font('Microsoft Sans Serif', 6.75, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, (System.Byte(204)));
+        self.label1.Location := new System.Drawing.Point(0, 292);
+        self.label1.Name := 'label1';
+        self.label1.Size := new System.Drawing.Size(252, 12);
+        self.label1.TabIndex := 7;
+        self.label1.Text := 'OS Version on Machine Name';
+        self.label1.TextAlign := System.Drawing.ContentAlignment.BottomRight;
         // 
         // groupBox3
         // 
@@ -347,6 +295,7 @@ procedure InitializeComponent;
         self.radioButton4.Name := 'radioButton4';
         self.radioButton4.Size := new System.Drawing.Size(179, 24);
         self.radioButton4.TabIndex := 1;
+        self.radioButton4.TabStop := true;
         self.radioButton4.Text := 'Open settings';
         self.radioButton4.UseVisualStyleBackColor := true;
         // 
@@ -360,19 +309,73 @@ procedure InitializeComponent;
         self.pictureBox7.TabIndex := 2;
         self.pictureBox7.TabStop := false;
         // 
-        // label1
+        // groupBox2
         // 
-        self.label1.Dock := System.Windows.Forms.DockStyle.Bottom;
-        self.label1.Font := new System.Drawing.Font('Microsoft Sans Serif', 6.75, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, (System.Byte(204)));
-        self.label1.Location := new System.Drawing.Point(0, 292);
-        self.label1.Name := 'label1';
-        self.label1.Size := new System.Drawing.Size(252, 12);
-        self.label1.TabIndex := 7;
-        self.label1.Text := 'OS Version on Machine Name';
-        self.label1.TextAlign := System.Drawing.ContentAlignment.BottomRight;
+        self.groupBox2.Controls.Add(self.radioButton2);
+        self.groupBox2.Controls.Add(self.pictureBox5);
+        self.groupBox2.Controls.Add(self.button1);
+        self.groupBox2.Controls.Add(self.radioButton1);
+        self.groupBox2.Controls.Add(self.pictureBox4);
+        self.groupBox2.Location := new System.Drawing.Point(6, 6);
+        self.groupBox2.Name := 'groupBox2';
+        self.groupBox2.Size := new System.Drawing.Size(239, 140);
+        self.groupBox2.TabIndex := 5;
+        self.groupBox2.TabStop := false;
+        self.groupBox2.Text := 'MicChat';
+        // 
+        // radioButton2
+        // 
+        self.radioButton2.Location := new System.Drawing.Point(54, 76);
+        self.radioButton2.Name := 'radioButton2';
+        self.radioButton2.Size := new System.Drawing.Size(179, 24);
+        self.radioButton2.TabIndex := 4;
+        self.radioButton2.Text := 'Host a server';
+        self.radioButton2.UseVisualStyleBackColor := true;
+        // 
+        // pictureBox5
+        // 
+        self.pictureBox5.Image := (System.Drawing.Image(resources.GetObject('pictureBox5.Image')));
+        self.pictureBox5.Location := new System.Drawing.Point(6, 67);
+        self.pictureBox5.Name := 'pictureBox5';
+        self.pictureBox5.Size := new System.Drawing.Size(42, 42);
+        self.pictureBox5.SizeMode := System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+        self.pictureBox5.TabIndex := 5;
+        self.pictureBox5.TabStop := false;
+        // 
+        // button1
+        // 
+        self.button1.Location := new System.Drawing.Point(158, 111);
+        self.button1.Name := 'button1';
+        self.button1.Size := new System.Drawing.Size(75, 23);
+        self.button1.TabIndex := 3;
+        self.button1.Text := 'Do';
+        self.button1.UseVisualStyleBackColor := true;
+        self.button1.Click += button1_Click;
+        // 
+        // radioButton1
+        // 
+        self.radioButton1.Checked := true;
+        self.radioButton1.Location := new System.Drawing.Point(54, 28);
+        self.radioButton1.Name := 'radioButton1';
+        self.radioButton1.Size := new System.Drawing.Size(179, 24);
+        self.radioButton1.TabIndex := 1;
+        self.radioButton1.TabStop := true;
+        self.radioButton1.Text := 'Open the client';
+        self.radioButton1.UseVisualStyleBackColor := true;
+        // 
+        // pictureBox4
+        // 
+        self.pictureBox4.Image := (System.Drawing.Image(resources.GetObject('pictureBox4.Image')));
+        self.pictureBox4.Location := new System.Drawing.Point(6, 19);
+        self.pictureBox4.Name := 'pictureBox4';
+        self.pictureBox4.Size := new System.Drawing.Size(42, 42);
+        self.pictureBox4.SizeMode := System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+        self.pictureBox4.TabIndex := 2;
+        self.pictureBox4.TabStop := false;
         // 
         // notifyIcon1
         // 
+        self.notifyIcon1.BalloonTipIcon := System.Windows.Forms.ToolTipIcon.Info;
         self.notifyIcon1.BalloonTipText := 'To show it, double-click it''s icon in the tray';
         self.notifyIcon1.BalloonTipTitle := 'MicChat is still opened';
         self.notifyIcon1.ContextMenuStrip := self.contextMenuStrip1;
@@ -385,7 +388,7 @@ procedure InitializeComponent;
         // 
         self.contextMenuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[9](self.openTheClientToolStripMenuItem1, self.hostAServerToolStripMenuItem1, self.toolStripSeparator3, self.showSystemInfoToolStripMenuItem1, self.toolStripSeparator5, self.showMicChatToolStripMenuItem, self.hideMicChatToolStripMenuItem, self.toolStripSeparator4, self.closeMicChatToolStripMenuItem));
         self.contextMenuStrip1.Name := 'contextMenuStrip1';
-        self.contextMenuStrip1.Size := new System.Drawing.Size(168, 176);
+        self.contextMenuStrip1.Size := new System.Drawing.Size(168, 154);
         // 
         // openTheClientToolStripMenuItem1
         // 
@@ -408,6 +411,19 @@ procedure InitializeComponent;
         self.toolStripSeparator3.Name := 'toolStripSeparator3';
         self.toolStripSeparator3.Size := new System.Drawing.Size(164, 6);
         // 
+        // showSystemInfoToolStripMenuItem1
+        // 
+        self.showSystemInfoToolStripMenuItem1.Image := (System.Drawing.Image(resources.GetObject('showSystemInfoToolStripMenuItem1.Image')));
+        self.showSystemInfoToolStripMenuItem1.Name := 'showSystemInfoToolStripMenuItem1';
+        self.showSystemInfoToolStripMenuItem1.Size := new System.Drawing.Size(167, 22);
+        self.showSystemInfoToolStripMenuItem1.Text := 'Show system info';
+        self.showSystemInfoToolStripMenuItem1.Click += showSystemInfoToolStripMenuItem1_Click;
+        // 
+        // toolStripSeparator5
+        // 
+        self.toolStripSeparator5.Name := 'toolStripSeparator5';
+        self.toolStripSeparator5.Size := new System.Drawing.Size(164, 6);
+        // 
         // showMicChatToolStripMenuItem
         // 
         self.showMicChatToolStripMenuItem.Image := (System.Drawing.Image(resources.GetObject('showMicChatToolStripMenuItem.Image')));
@@ -425,6 +441,11 @@ procedure InitializeComponent;
         self.hideMicChatToolStripMenuItem.Text := 'Hide MicChat';
         self.hideMicChatToolStripMenuItem.Click += hideMicChatToolStripMenuItem_Click;
         // 
+        // toolStripSeparator4
+        // 
+        self.toolStripSeparator4.Name := 'toolStripSeparator4';
+        self.toolStripSeparator4.Size := new System.Drawing.Size(164, 6);
+        // 
         // closeMicChatToolStripMenuItem
         // 
         self.closeMicChatToolStripMenuItem.Image := (System.Drawing.Image(resources.GetObject('closeMicChatToolStripMenuItem.Image')));
@@ -432,24 +453,6 @@ procedure InitializeComponent;
         self.closeMicChatToolStripMenuItem.Size := new System.Drawing.Size(167, 22);
         self.closeMicChatToolStripMenuItem.Text := 'Close MicChat';
         self.closeMicChatToolStripMenuItem.Click += closeMicChatToolStripMenuItem_Click;
-        // 
-        // toolStripSeparator5
-        // 
-        self.toolStripSeparator5.Name := 'toolStripSeparator5';
-        self.toolStripSeparator5.Size := new System.Drawing.Size(164, 6);
-        // 
-        // toolStripSeparator4
-        // 
-        self.toolStripSeparator4.Name := 'toolStripSeparator4';
-        self.toolStripSeparator4.Size := new System.Drawing.Size(164, 6);
-        // 
-        // showSystemInfoToolStripMenuItem1
-        // 
-        self.showSystemInfoToolStripMenuItem1.Image := (System.Drawing.Image(resources.GetObject('showSystemInfoToolStripMenuItem1.Image')));
-        self.showSystemInfoToolStripMenuItem1.Name := 'showSystemInfoToolStripMenuItem1';
-        self.showSystemInfoToolStripMenuItem1.Size := new System.Drawing.Size(167, 22);
-        self.showSystemInfoToolStripMenuItem1.Text := 'Show system info';
-        self.showSystemInfoToolStripMenuItem1.Click += showSystemInfoToolStripMenuItem1_Click;
         // 
         // Form1
         // 
@@ -469,17 +472,17 @@ procedure InitializeComponent;
         self.menuStrip1.ResumeLayout(false);
         self.menuStrip1.PerformLayout();
         self.panel1.ResumeLayout(false);
-        self.panel2.ResumeLayout(false);
         self.groupBox1.ResumeLayout(false);
         (System.ComponentModel.ISupportInitialize(self.pictureBox3)).EndInit();
         (System.ComponentModel.ISupportInitialize(self.pictureBox2)).EndInit();
         (System.ComponentModel.ISupportInitialize(self.pictureBox1)).EndInit();
-        self.groupBox2.ResumeLayout(false);
-        (System.ComponentModel.ISupportInitialize(self.pictureBox4)).EndInit();
-        (System.ComponentModel.ISupportInitialize(self.pictureBox5)).EndInit();
+        self.panel2.ResumeLayout(false);
         self.groupBox3.ResumeLayout(false);
         (System.ComponentModel.ISupportInitialize(self.pictureBox6)).EndInit();
         (System.ComponentModel.ISupportInitialize(self.pictureBox7)).EndInit();
+        self.groupBox2.ResumeLayout(false);
+        (System.ComponentModel.ISupportInitialize(self.pictureBox5)).EndInit();
+        (System.ComponentModel.ISupportInitialize(self.pictureBox4)).EndInit();
         self.contextMenuStrip1.ResumeLayout(false);
         self.ResumeLayout(false);
         self.PerformLayout();
