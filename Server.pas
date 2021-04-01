@@ -3,6 +3,8 @@
 uses
   System, System.Net, System.Net.Sockets, System.IO, System.Threading, crt;
 
+label ReadIP;
+
 type
   TByteArray = array of byte;
 
@@ -22,6 +24,7 @@ procedure chat(data: object);
 var
   i, err: integer;
   name: string;
+
 begin
   Val(data.ToString, i, err);
   s_str[i] := client[i].GetStream;
@@ -33,22 +36,25 @@ begin
   msg := Concat('Welcome to the server ', s_ip, ', ', name, '!');
   s_str[i].Write(System.Text.Encoding.Default.GetBytes(msg), 0, msg.Length);
   repeat
-      while true do 
-      begin
+    while true do 
+    begin
+      try
         length := s_str[i].Read(s_raw, 0, s_raw.Length);
-        cl_str := System.Text.Encoding.Default.GetString(s_raw, 0, length);
-        writeln(name, ': ', cl_str);
-        for j: integer := 1 to n do
-        begin
-          s_str[j] := client[j].GetStream;
-          msg := name + ': ' + cl_str{+#13#10};
-          if s_str[j].CanWrite then
-            s_str[j].Write(System.Text.Encoding.Default.GetBytes(msg), 0, msg.Length)
-          else
-            writeln('Error. Cannot send the message to the client.');
-        end;
+      cl_str := System.Text.Encoding.Default.GetString(s_raw, 0, length);
+      writeln(name, ': ', cl_str);
+      for j: integer := 1 to n do
+      begin
+        s_str[j] := client[j].GetStream;
+        msg := name + ': ' + cl_str{+#13#10};
+        if s_str[j].CanWrite then
+          s_str[j].Write(System.Text.Encoding.Default.GetBytes(msg), 0, msg.Length)
+        else
+          writeln('Error. Cannot send the message to the client.');
       end;
- until false;
+    except
+    end;
+    end;
+  until false;
 end;
 
 
@@ -58,10 +64,12 @@ begin
   textcolor(2);
   write('MicChat Revived Edition [Server]');
   writeln;
-  write('Version 1.2');
+  write('Version 1.3');
+  ReadIP:
   repeat
     begin
       try
+        ErrorOccured := false;
         textcolor(3);
         writeln;
         write('Enter IP: ');
@@ -82,15 +90,19 @@ begin
         sleep(1000);
         ErrorOccured := true;
       end;
-      i := 0;
-      if(ErrorOccured = false) then while true do
-        if listener.Pending then
-        begin
-          i += 1;
-          n := i;
-          client[i] := listener.AcceptTcpClient();
-          thr[i] := new Thread(chat);
-          thr[i].Start(i);
-        end;
+      if(ErrorOccured) then goto ReadIP;
+      try
+        i := 0;
+        while true do
+          if listener.Pending then
+          begin
+            i += 1;
+            n := i;
+            client[i] := listener.AcceptTcpClient();
+            thr[i] := new Thread(chat);
+            thr[i].Start(i);
+          end;
+      except
+      end;
     end until Connected;
 end.

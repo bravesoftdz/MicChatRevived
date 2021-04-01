@@ -11,21 +11,30 @@ procedure InitializeComponent;
         self.panel2 := new System.Windows.Forms.Panel();
         self.button1 := new System.Windows.Forms.Button();
         self.panel3 := new System.Windows.Forms.Panel();
-        self.linkLabel3 := new System.Windows.Forms.LinkLabel();
-        self.linkLabel2 := new System.Windows.Forms.LinkLabel();
+        self.groupBox2 := new System.Windows.Forms.GroupBox();
+        self.linkLabel5 := new System.Windows.Forms.LinkLabel();
+        self.linkLabel11 := new System.Windows.Forms.LinkLabel();
         self.linkLabel1 := new System.Windows.Forms.LinkLabel();
+        self.linkLabel2 := new System.Windows.Forms.LinkLabel();
+        self.linkLabel3 := new System.Windows.Forms.LinkLabel();
         self.label2 := new System.Windows.Forms.Label();
         self.panel4 := new System.Windows.Forms.Panel();
+        self.groupBox1 := new System.Windows.Forms.GroupBox();
         self.linkLabel4 := new System.Windows.Forms.LinkLabel();
+        self.linkLabel7 := new System.Windows.Forms.LinkLabel();
+        self.linkLabel10 := new System.Windows.Forms.LinkLabel();
         self.linkLabel6 := new System.Windows.Forms.LinkLabel();
+        self.linkLabel9 := new System.Windows.Forms.LinkLabel();
+        self.linkLabel8 := new System.Windows.Forms.LinkLabel();
         self.label3 := new System.Windows.Forms.Label();
-        self.linkLabel5 := new System.Windows.Forms.LinkLabel();
         self.panel1.SuspendLayout();
         (System.ComponentModel.ISupportInitialize(self.pictureBox2)).BeginInit();
         (System.ComponentModel.ISupportInitialize(self.pictureBox1)).BeginInit();
         self.panel2.SuspendLayout();
         self.panel3.SuspendLayout();
+        self.groupBox2.SuspendLayout();
         self.panel4.SuspendLayout();
+        self.groupBox1.SuspendLayout();
         self.SuspendLayout();
         // 
         // panel1
@@ -88,7 +97,7 @@ procedure InitializeComponent;
         treeNode12.Name := 'Узел1';
         treeNode12.Text := 'Maksim Chernyshkov';
         self.treeView1.Nodes.AddRange(new System.Windows.Forms.TreeNode[2](treeNode11, treeNode12));
-        self.treeView1.Size := new System.Drawing.Size(137, 216);
+        self.treeView1.Size := new System.Drawing.Size(137, 246);
         self.treeView1.TabIndex := 1;
         self.treeView1.AfterSelect += treeView1_AfterSelect;
         // 
@@ -98,7 +107,7 @@ procedure InitializeComponent;
         self.panel2.BackgroundImageLayout := System.Windows.Forms.ImageLayout.Stretch;
         self.panel2.Controls.Add(self.button1);
         self.panel2.Dock := System.Windows.Forms.DockStyle.Bottom;
-        self.panel2.Location := new System.Drawing.Point(137, 242);
+        self.panel2.Location := new System.Drawing.Point(137, 272);
         self.panel2.Name := 'panel2';
         self.panel2.Size := new System.Drawing.Size(247, 29);
         self.panel2.TabIndex := 2;
@@ -115,120 +124,205 @@ procedure InitializeComponent;
         // 
         // panel3
         // 
-        self.panel3.Controls.Add(self.linkLabel5);
-        self.panel3.Controls.Add(self.linkLabel3);
-        self.panel3.Controls.Add(self.linkLabel2);
-        self.panel3.Controls.Add(self.linkLabel1);
+        self.panel3.Controls.Add(self.groupBox2);
         self.panel3.Controls.Add(self.label2);
         self.panel3.Dock := System.Windows.Forms.DockStyle.Fill;
         self.panel3.Location := new System.Drawing.Point(137, 55);
         self.panel3.Name := 'panel3';
-        self.panel3.Size := new System.Drawing.Size(247, 187);
+        self.panel3.Size := new System.Drawing.Size(247, 217);
         self.panel3.TabIndex := 3;
         // 
-        // linkLabel3
+        // groupBox2
         // 
-        self.linkLabel3.LinkArea := new System.Windows.Forms.LinkArea(18, 6);
-        self.linkLabel3.Location := new System.Drawing.Point(6, 169);
-        self.linkLabel3.Name := 'linkLabel3';
-        self.linkLabel3.Size := new System.Drawing.Size(238, 15);
-        self.linkLabel3.TabIndex := 3;
-        self.linkLabel3.TabStop := true;
-        self.linkLabel3.Text := 'Michael Agarkov''s GitHub';
-        self.linkLabel3.UseCompatibleTextRendering := true;
-        self.linkLabel3.LinkClicked += linkLabel3_LinkClicked;
-        // 
-        // linkLabel2
-        // 
-        self.linkLabel2.LinkArea := new System.Windows.Forms.LinkArea(18, 14);
-        self.linkLabel2.Location := new System.Drawing.Point(6, 152);
-        self.linkLabel2.Name := 'linkLabel2';
-        self.linkLabel2.Size := new System.Drawing.Size(238, 15);
-        self.linkLabel2.TabIndex := 2;
-        self.linkLabel2.TabStop := true;
-        self.linkLabel2.Text := 'Michael Agarkov''s Discord server';
-        self.linkLabel2.UseCompatibleTextRendering := true;
-        self.linkLabel2.LinkClicked += linkLabel2_LinkClicked;
-        // 
-        // linkLabel1
-        // 
-        self.linkLabel1.LinkArea := new System.Windows.Forms.LinkArea(18, 15);
-        self.linkLabel1.Location := new System.Drawing.Point(6, 135);
-        self.linkLabel1.Name := 'linkLabel1';
-        self.linkLabel1.Size := new System.Drawing.Size(238, 17);
-        self.linkLabel1.TabIndex := 1;
-        self.linkLabel1.TabStop := true;
-        self.linkLabel1.Text := 'Michael Agarkov''s YouTube Channel';
-        self.linkLabel1.UseCompatibleTextRendering := true;
-        self.linkLabel1.LinkClicked += linkLabel1_LinkClicked;
-        // 
-        // label2
-        // 
-        self.label2.Location := new System.Drawing.Point(6, 6);
-        self.label2.Name := 'label2';
-        self.label2.Size := new System.Drawing.Size(238, 112);
-        self.label2.TabIndex := 0;
-        self.label2.Text := '• Original creator of this project'#13#10'• Creator and designer of this whole launcher'#13#10'• Created MicChat classic and Revived v1.1 entirely himself'#13#10'• Wrote the EULA';
-        // 
-        // panel4
-        // 
-        self.panel4.Controls.Add(self.linkLabel4);
-        self.panel4.Controls.Add(self.linkLabel6);
-        self.panel4.Controls.Add(self.label3);
-        self.panel4.Dock := System.Windows.Forms.DockStyle.Fill;
-        self.panel4.Location := new System.Drawing.Point(137, 55);
-        self.panel4.Name := 'panel4';
-        self.panel4.Size := new System.Drawing.Size(247, 187);
-        self.panel4.TabIndex := 4;
-        self.panel4.Visible := false;
-        // 
-        // linkLabel4
-        // 
-        self.linkLabel4.LinkArea := new System.Windows.Forms.LinkArea(21, 6);
-        self.linkLabel4.Location := new System.Drawing.Point(6, 169);
-        self.linkLabel4.Name := 'linkLabel4';
-        self.linkLabel4.Size := new System.Drawing.Size(238, 15);
-        self.linkLabel4.TabIndex := 3;
-        self.linkLabel4.TabStop := true;
-        self.linkLabel4.Text := 'Maksim Chernyshkov''s GitHub';
-        self.linkLabel4.UseCompatibleTextRendering := true;
-        self.linkLabel4.LinkClicked += linkLabel4_LinkClicked;
-        // 
-        // linkLabel6
-        // 
-        self.linkLabel6.LinkArea := new System.Windows.Forms.LinkArea(21, 2);
-        self.linkLabel6.Location := new System.Drawing.Point(6, 150);
-        self.linkLabel6.Name := 'linkLabel6';
-        self.linkLabel6.Size := new System.Drawing.Size(238, 17);
-        self.linkLabel6.TabIndex := 1;
-        self.linkLabel6.TabStop := true;
-        self.linkLabel6.Text := 'Maksim Chernyshkov''s VK';
-        self.linkLabel6.UseCompatibleTextRendering := true;
-        self.linkLabel6.LinkClicked += linkLabel6_LinkClicked;
-        // 
-        // label3
-        // 
-        self.label3.Location := new System.Drawing.Point(6, 6);
-        self.label3.Name := 'label3';
-        self.label3.Size := new System.Drawing.Size(238, 144);
-        self.label3.TabIndex := 0;
-        self.label3.Text := '• Joined in version 1.2'#13#10'• Gives lots of good ideas'#13#10'• Made enhancements to the client in 1.2';
+        self.groupBox2.Controls.Add(self.linkLabel5);
+        self.groupBox2.Controls.Add(self.linkLabel11);
+        self.groupBox2.Controls.Add(self.linkLabel1);
+        self.groupBox2.Controls.Add(self.linkLabel2);
+        self.groupBox2.Controls.Add(self.linkLabel3);
+        self.groupBox2.Location := new System.Drawing.Point(6, 109);
+        self.groupBox2.Name := 'groupBox2';
+        self.groupBox2.Size := new System.Drawing.Size(235, 102);
+        self.groupBox2.TabIndex := 6;
+        self.groupBox2.TabStop := false;
+        self.groupBox2.Text := 'Michael Agarkov''s links';
         // 
         // linkLabel5
         // 
         self.linkLabel5.LinkArea := new System.Windows.Forms.LinkArea(18, 15);
-        self.linkLabel5.Location := new System.Drawing.Point(6, 118);
+        self.linkLabel5.Location := new System.Drawing.Point(6, 16);
         self.linkLabel5.Name := 'linkLabel5';
-        self.linkLabel5.Size := new System.Drawing.Size(238, 17);
+        self.linkLabel5.Size := new System.Drawing.Size(223, 17);
         self.linkLabel5.TabIndex := 4;
         self.linkLabel5.TabStop := true;
         self.linkLabel5.Text := 'Michael Agarkov''s Email';
         self.linkLabel5.UseCompatibleTextRendering := true;
         self.linkLabel5.LinkClicked += linkLabel5_LinkClicked;
         // 
+        // linkLabel11
+        // 
+        self.linkLabel11.LinkArea := new System.Windows.Forms.LinkArea(18, 6);
+        self.linkLabel11.Location := new System.Drawing.Point(6, 84);
+        self.linkLabel11.Name := 'linkLabel11';
+        self.linkLabel11.Size := new System.Drawing.Size(223, 15);
+        self.linkLabel11.TabIndex := 5;
+        self.linkLabel11.TabStop := true;
+        self.linkLabel11.Text := 'Michael Agarkov''s Reddit';
+        self.linkLabel11.UseCompatibleTextRendering := true;
+        self.linkLabel11.LinkClicked += linkLabel11_LinkClicked;
+        // 
+        // linkLabel1
+        // 
+        self.linkLabel1.LinkArea := new System.Windows.Forms.LinkArea(18, 15);
+        self.linkLabel1.Location := new System.Drawing.Point(6, 33);
+        self.linkLabel1.Name := 'linkLabel1';
+        self.linkLabel1.Size := new System.Drawing.Size(223, 17);
+        self.linkLabel1.TabIndex := 1;
+        self.linkLabel1.TabStop := true;
+        self.linkLabel1.Text := 'Michael Agarkov''s YouTube Channel';
+        self.linkLabel1.UseCompatibleTextRendering := true;
+        self.linkLabel1.LinkClicked += linkLabel1_LinkClicked;
+        // 
+        // linkLabel2
+        // 
+        self.linkLabel2.LinkArea := new System.Windows.Forms.LinkArea(18, 14);
+        self.linkLabel2.Location := new System.Drawing.Point(6, 50);
+        self.linkLabel2.Name := 'linkLabel2';
+        self.linkLabel2.Size := new System.Drawing.Size(223, 15);
+        self.linkLabel2.TabIndex := 2;
+        self.linkLabel2.TabStop := true;
+        self.linkLabel2.Text := 'Michael Agarkov''s Discord server';
+        self.linkLabel2.UseCompatibleTextRendering := true;
+        self.linkLabel2.LinkClicked += linkLabel2_LinkClicked;
+        // 
+        // linkLabel3
+        // 
+        self.linkLabel3.LinkArea := new System.Windows.Forms.LinkArea(18, 6);
+        self.linkLabel3.Location := new System.Drawing.Point(6, 67);
+        self.linkLabel3.Name := 'linkLabel3';
+        self.linkLabel3.Size := new System.Drawing.Size(223, 15);
+        self.linkLabel3.TabIndex := 3;
+        self.linkLabel3.TabStop := true;
+        self.linkLabel3.Text := 'Michael Agarkov''s GitHub';
+        self.linkLabel3.UseCompatibleTextRendering := true;
+        self.linkLabel3.LinkClicked += linkLabel3_LinkClicked;
+        // 
+        // label2
+        // 
+        self.label2.Location := new System.Drawing.Point(6, 6);
+        self.label2.Name := 'label2';
+        self.label2.Size := new System.Drawing.Size(238, 100);
+        self.label2.TabIndex := 0;
+        self.label2.Text := '• Original creator of this project'#13#10'• Creator and designer of this whole launcher'#13#10'• Created MicChat classic and Revived v1.1 entirely himself'#13#10'• Wrote the EULA';
+        // 
+        // panel4
+        // 
+        self.panel4.Controls.Add(self.groupBox1);
+        self.panel4.Controls.Add(self.label3);
+        self.panel4.Dock := System.Windows.Forms.DockStyle.Fill;
+        self.panel4.Location := new System.Drawing.Point(137, 55);
+        self.panel4.Name := 'panel4';
+        self.panel4.Size := new System.Drawing.Size(247, 217);
+        self.panel4.TabIndex := 4;
+        self.panel4.Visible := false;
+        // 
+        // groupBox1
+        // 
+        self.groupBox1.Controls.Add(self.linkLabel4);
+        self.groupBox1.Controls.Add(self.linkLabel7);
+        self.groupBox1.Controls.Add(self.linkLabel10);
+        self.groupBox1.Controls.Add(self.linkLabel6);
+        self.groupBox1.Controls.Add(self.linkLabel9);
+        self.groupBox1.Controls.Add(self.linkLabel8);
+        self.groupBox1.Location := new System.Drawing.Point(6, 90);
+        self.groupBox1.Name := 'groupBox1';
+        self.groupBox1.Size := new System.Drawing.Size(235, 124);
+        self.groupBox1.TabIndex := 8;
+        self.groupBox1.TabStop := false;
+        self.groupBox1.Text := 'Maksim Chernyshkov''s links';
+        // 
+        // linkLabel4
+        // 
+        self.linkLabel4.LinkArea := new System.Windows.Forms.LinkArea(21, 6);
+        self.linkLabel4.Location := new System.Drawing.Point(6, 103);
+        self.linkLabel4.Name := 'linkLabel4';
+        self.linkLabel4.Size := new System.Drawing.Size(212, 15);
+        self.linkLabel4.TabIndex := 3;
+        self.linkLabel4.TabStop := true;
+        self.linkLabel4.Text := 'Maksim Chernyshkov''s GitHub';
+        self.linkLabel4.UseCompatibleTextRendering := true;
+        self.linkLabel4.LinkClicked += linkLabel4_LinkClicked;
+        // 
+        // linkLabel7
+        // 
+        self.linkLabel7.LinkArea := new System.Windows.Forms.LinkArea(21, 7);
+        self.linkLabel7.Location := new System.Drawing.Point(6, 18);
+        self.linkLabel7.Name := 'linkLabel7';
+        self.linkLabel7.Size := new System.Drawing.Size(223, 17);
+        self.linkLabel7.TabIndex := 4;
+        self.linkLabel7.TabStop := true;
+        self.linkLabel7.Text := 'Maksim Chernyshkov''s Website';
+        self.linkLabel7.UseCompatibleTextRendering := true;
+        self.linkLabel7.LinkClicked += linkLabel7_LinkClicked;
+        // 
+        // linkLabel10
+        // 
+        self.linkLabel10.LinkArea := new System.Windows.Forms.LinkArea(21, 9);
+        self.linkLabel10.Location := new System.Drawing.Point(6, 69);
+        self.linkLabel10.Name := 'linkLabel10';
+        self.linkLabel10.Size := new System.Drawing.Size(223, 17);
+        self.linkLabel10.TabIndex := 7;
+        self.linkLabel10.TabStop := true;
+        self.linkLabel10.Text := 'Maksim Chernyshkov''s Email';
+        self.linkLabel10.UseCompatibleTextRendering := true;
+        self.linkLabel10.LinkClicked += linkLabel10_LinkClicked;
+        // 
+        // linkLabel6
+        // 
+        self.linkLabel6.LinkArea := new System.Windows.Forms.LinkArea(21, 2);
+        self.linkLabel6.Location := new System.Drawing.Point(6, 86);
+        self.linkLabel6.Name := 'linkLabel6';
+        self.linkLabel6.Size := new System.Drawing.Size(223, 17);
+        self.linkLabel6.TabIndex := 1;
+        self.linkLabel6.TabStop := true;
+        self.linkLabel6.Text := 'Maksim Chernyshkov''s VK';
+        self.linkLabel6.UseCompatibleTextRendering := true;
+        self.linkLabel6.LinkClicked += linkLabel6_LinkClicked;
+        // 
+        // linkLabel9
+        // 
+        self.linkLabel9.LinkArea := new System.Windows.Forms.LinkArea(21, 9);
+        self.linkLabel9.Location := new System.Drawing.Point(6, 52);
+        self.linkLabel9.Name := 'linkLabel9';
+        self.linkLabel9.Size := new System.Drawing.Size(223, 17);
+        self.linkLabel9.TabIndex := 6;
+        self.linkLabel9.TabStop := true;
+        self.linkLabel9.Text := 'Maksim Chernyshkov''s Twitter';
+        self.linkLabel9.UseCompatibleTextRendering := true;
+        self.linkLabel9.LinkClicked += linkLabel9_LinkClicked;
+        // 
+        // linkLabel8
+        // 
+        self.linkLabel8.LinkArea := new System.Windows.Forms.LinkArea(21, 9);
+        self.linkLabel8.Location := new System.Drawing.Point(6, 35);
+        self.linkLabel8.Name := 'linkLabel8';
+        self.linkLabel8.Size := new System.Drawing.Size(223, 17);
+        self.linkLabel8.TabIndex := 5;
+        self.linkLabel8.TabStop := true;
+        self.linkLabel8.Text := 'Maksim Chernyshkov''s Instagram';
+        self.linkLabel8.UseCompatibleTextRendering := true;
+        self.linkLabel8.LinkClicked += linkLabel8_LinkClicked;
+        // 
+        // label3
+        // 
+        self.label3.Location := new System.Drawing.Point(6, 6);
+        self.label3.Name := 'label3';
+        self.label3.Size := new System.Drawing.Size(238, 81);
+        self.label3.TabIndex := 0;
+        self.label3.Text := '• Joined in version 1.2'#13#10'• Gives lots of good ideas'#13#10'• Made enhancements to the client in 1.2';
+        // 
         // ContribForm
         // 
-        self.ClientSize := new System.Drawing.Size(384, 271);
+        self.ClientSize := new System.Drawing.Size(384, 301);
         self.Controls.Add(self.panel4);
         self.Controls.Add(self.panel3);
         self.Controls.Add(self.panel2);
@@ -247,6 +341,8 @@ procedure InitializeComponent;
         (System.ComponentModel.ISupportInitialize(self.pictureBox1)).EndInit();
         self.panel2.ResumeLayout(false);
         self.panel3.ResumeLayout(false);
+        self.groupBox2.ResumeLayout(false);
         self.panel4.ResumeLayout(false);
+        self.groupBox1.ResumeLayout(false);
         self.ResumeLayout(false);
     end;
