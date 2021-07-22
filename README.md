@@ -1,3 +1,4 @@
+![Screenshot_1](https://user-images.githubusercontent.com/81249219/126682296-86bb58c6-b491-4c47-ace4-9245b91177f1.png)
 # MicChat Revived Edition
 A revived version of my old client/server chat program made in PascalABC.NET back in April 2020.
 
