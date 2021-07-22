@@ -39,7 +39,7 @@ begin
   textcolor(2);
   write('MicChat Revived Edition [Client]');
   writeln;
-  write('Version 1.3');
+  write('Version 1.4');
   repeat
     begin
       try
