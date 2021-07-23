@@ -64,7 +64,7 @@ begin
   textcolor(2);
   write('MicChat Revived Edition [Server]');
   writeln;
-  write('Version 1.3');
+  write('Version 1.4');
   ReadIP:
   repeat
     begin

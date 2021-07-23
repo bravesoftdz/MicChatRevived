@@ -1,38 +1,33 @@
-End-User License Agreement ("Agreement")
-Last updated: 27.03.2021
+BSD 4-Clause License
 
-Please read this End-User License Agreement ("Agreement") carefully before using MicChat ("Application").
-By using the Application, you are agreeing to be bound by the terms and conditions of this Agreement.
-If you do not agree to the terms of this Agreement, do not use the Application.
+Copyright (c) 2021, Michael Agarkov, Maksim Chernyshkov
+All rights reserved.
 
-License
+Redistribution and use in source and binary forms, with or without
+modification, are permitted provided that the following conditions are met:
 
-Michael Agarkov grants you a revocable, non-exclusive, non-transferable, limited license to download, install and use the Application for your personal and commercial purposes strictly in accordance with the terms of this Agreement.
+1. Redistributions of source code must retain the above copyright notice, this
+   list of conditions and the following disclaimer.
 
-Restrictions
+2. Redistributions in binary form must reproduce the above copyright notice,
+   this list of conditions and the following disclaimer in the documentation
+   and/or other materials provided with the distribution.
 
-You agree not to, and you will not permit others to:
-a) license, sell, rent, lease, assign, outsource or disclose the Application
+3. All advertising materials mentioning features or use of this software must
+   display the following acknowledgement:
+     This product includes software developed by Michael Agarkov and Maksim Chernyshkov.
 
-Modifications to Application
+4. Neither the name of the copyright holder nor the names of its
+   contributors may be used to endorse or promote products derived from
+   this software without specific prior written permission.
 
-Michael Agarkov reserves the right to modify, suspend or discontinue, temporarily or permanently, the Application or any service to which it connects, with or without notice and without liability to you.
-
-Term and Termination
-
-This Agreement shall remain in effect until terminated by you or Michael Agarkov. 
-Michael Agarkov may, in his sole discretion, at any time and for any or no reason, suspend or terminate this Agreement with or without prior notice.
-This Agreement will terminate immediately, without prior notice from Michael Agarkov, in the event that you fail to comply with any provision of this Agreement. You may also terminate this Agreement by deleting the Application and all copies thereof from your mobile device or from your desktop.
-Upon termination of this Agreement, you shall cease all use of the Application and delete all copies of the Application from your mobile device or from your desktop.
-
-Severability
-
-If any provision of this Agreement is held to be unenforceable or invalid, such provision will be changed and interpreted to accomplish the objectives of such provision to the greatest extent possible under applicable law and the remaining provisions will continue in full force and effect.
-
-Amendments to this Agreement
-
-Michael Agarkov reserves the right, at his sole discretion, to modify or replace this Agreement at any time. If a revision is material we will provide at least 30 days' notice prior to any new terms taking effect. What constitutes a material change will be determined at our sole discretion.
-
-Contact Information
-
-michaelagarkov@outlook.com
+THIS SOFTWARE IS PROVIDED BY COPYRIGHT HOLDER "AS IS" AND ANY EXPRESS OR
+IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF
+MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO
+EVENT SHALL COPYRIGHT HOLDER BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,
+SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO,
+PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS;
+OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY,
+WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR
+OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF
+ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.

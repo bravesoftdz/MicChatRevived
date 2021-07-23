@@ -34,7 +34,7 @@ procedure InitializeComponent;
         self.linkLabel1.Size := new System.Drawing.Size(190, 67);
         self.linkLabel1.TabIndex := 1;
         self.linkLabel1.TabStop := true;
-        self.linkLabel1.Text := 'MicChat Revived Edition'#13#10'Version 1.3'#13#10#13#10'Contributors';
+        self.linkLabel1.Text := 'MicChat Revived Edition'#13#10'Version 1.4'#13#10#13#10'Contributors';
         self.linkLabel1.UseCompatibleTextRendering := true;
         self.linkLabel1.LinkClicked += linkLabel1_LinkClicked;
         // 
