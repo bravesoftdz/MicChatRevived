@@ -16,3 +16,7 @@ I recommend using [PascalABC.NET version 3.4.2 build 2050](https://archive.org/d
 
 ## MicChat Revived License
 MicChat Revived is published under the [**BSD 4-Clause License**](https://github.com/MichaelAgarkov/MicChatRevived/blob/main/License.txt) for your freedom to [modify](https://github.com/MichaelAgarkov/MicChatRevived/wiki/Modifying) the program the way you want it to work.
+
+
+Copyright (c) 2021, Michael Agarkov
+All rights reserved.
