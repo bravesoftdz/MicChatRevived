@@ -1,37 +1,18 @@
-## Welcome to GitHub Pages
+### MicChat Revived - A nice local chat program
 
-You can use the [editor on GitHub](https://github.com/MichaelAgarkov/MicChatRevived/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
+MicChat Revived is a local chat program, where you can host a server, and then connect to it through different computers, connected to the same network.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+![Screenshot_1](https://user-images.githubusercontent.com/81249219/126682296-86bb58c6-b491-4c47-ace4-9245b91177f1.png)
 
-### Markdown
+You can read the [wiki](https://github.com/MichaelAgarkov/MicChatRevived/wiki) for more info.
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+## Download MicChat Revived
 
-```markdown
-Syntax highlighted code block
+- [Releases](https://github.com/MichaelAgarkov/MicChatRevived/releases)
+- [Source code](https://github.com/MichaelAgarkov/MicChatRevived)
 
-# Header 1
-## Header 2
-### Header 3
+### Compiler for the source code
+I recommend using [PascalABC.NET version 3.4.2 build 2050](https://archive.org/download/pascalabc.net/PascalABCNETWithDotNetSetup.exe) because it's the version MicChat is compiled in.
 
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/MichaelAgarkov/MicChatRevived/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+## MicChat Revived License
+MicChat Revived is published under the [**BSD 4-Clause License**](https://github.com/MichaelAgarkov/MicChatRevived/blob/main/License.txt) for your freedom to [modify](https://github.com/MichaelAgarkov/MicChatRevived/wiki/Modifying) the program the way you want it to work.
