@@ -1,6 +1,6 @@
 # MicChat Revived - A nice local chat program
 
-MicChat Revived is a local chat program, where you can host a server, and then connect to it through different computers, connected to the same network through the client.
+MicChat Revived is a chat program, where you can host a server, and then connect to it through different computers, connected to the same network through the client.
 
 ![Screenshot_1](https://user-images.githubusercontent.com/81249219/126682296-86bb58c6-b491-4c47-ace4-9245b91177f1.png)
 
